@@ -119,9 +119,9 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve frontend
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.status(200).send('Server is up');
-});
+// app.get('/', (req, res) => {
+//   res.status(200).send('Server is up');
+// });
 
 // Endpoint to handle query
 app.get('/suggest', (req, res) => {
